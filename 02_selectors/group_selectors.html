@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Selectors</title>
+
+    <style>
+        h1, h2, h3 {
+            color: red;
+            border: 3px solid black;
+        }
+
+        .div1 {
+            color: blue;
+            border: 3px solid red;
+        }
+
+        .bgOrange {
+            background-color: orange;
+        }
+
+        .bgYellow {
+            background-color: yellow;
+        }
+
+        div.bgRed {
+            color: white;
+            background-color: red;
+        }
+
+        #textBlue {
+            color: blue;
+        }
+
+        p {
+            color: red;
+        }
+
+        .class1 {
+            color: blue;
+        }
+
+        #id1 {
+            color: green;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- Group Selectors
+        1. Type selectors
+        2. Class selectors
+        3. ID selectors 
+    -->
+
+    <!-- 1. Type Selectors -->
+    
+    <h1>Heading One</h1>
+    <h3>Heading three</h3>
+
+    <!-- 2. Class Selectors -->
+
+    <div class="div1">Div One</div>
+
+    <p class="div1 bgYellow bgOrange">This is a paragraph</p>
+
+    <p class="div1 bgOrange bgYellow">This is a paragraph</p>
+
+    <!-- Type selector with class selector -->
+
+    <div class="bgRed">
+        Type selector with class selector example
+    </div>
+
+    <p class="bgRed">Paragraph</p>
+
+    <!-- ID Selector -->
+
+    <p id="textBlue">ID Selector</p>
+
+    <!-- Specificity / Order of precedence - 
+        for - Type, class and ID selector 
+    -->
+
+    <hr>
+
+    <p>Type selector only</p>
+
+    <p class="class1">Type selector with class selector</p>
+
+    <p class="class1" id="id1">
+        Type selector with class and ID selector
+    </p>
+
+</body>
+</html>
